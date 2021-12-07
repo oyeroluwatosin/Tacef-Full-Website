@@ -1,0 +1,111 @@
+.book_collection {
+    padding-top: 30px;
+}
+
+.book_header {
+    text-align: center;
+    margin-bottom: 50px;
+    text-transform: uppercase;
+    font-size: 35px;
+    letter-spacing: 5px;
+}
+
+.card {
+    border: none;
+    background: #fff;
+}
+
+.side-one p {
+    font-size: 16px;
+    margin-top: -10px;
+}
+
+.img-area {
+    /* width: 150px;
+    height: 150px; */
+    display: inline-block;
+    overflow: hidden;
+}
+
+.img-area img {
+    margin-top: 5px;
+    padding: 8px;
+}
+
+
+/* .team-single:hover .side-two {
+    transform: rotateY(0deg);
+    border-radius: 5px;
+}
+
+.team-single:hover .side-one {
+    transform: rotateY(180deg);
+    border-radius: 5px;
+} */
+
+.content-area {
+    transform: perspective(1000px);
+    transition: 1s;
+    transform-style: preserve-3d;
+    position: relative;
+}
+
+.side-one {
+    position: relative;
+    transform: rotateY(0deg);
+    z-index: 2;
+    margin-bottom: 30px;
+}
+
+.side-two {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #fff;
+    transform: rotateY(-180deg);
+}
+
+.side-one,
+.side-two {
+    backface-visibility: hidden;
+    transition: 1s;
+    transform-style: preserve-3d;
+}
+
+.side-one .card,
+.side-two .card {
+    min-height: 312px;
+}
+
+#Download {
+    margin-left: 35%;
+    margin-right: 30%;
+    margin-bottom: 30px;
+}
+
+@media(max-width:320px) {
+    .image {
+        margin-left: -55px !important;
+    }
+    .side-two p {
+        font-size: 13px !important;
+    }
+}
+
+@media(max-width:360px) {
+    .image {
+        margin-left: -20px;
+    }
+    .side-two p {
+        font-size: 15px;
+    }
+}
+
+@media(max-width:411px) {
+    /* .image {
+        margin-left: -20px;
+    } */
+    .side-two p {
+        font-size: 16.5px;
+    }
+}
